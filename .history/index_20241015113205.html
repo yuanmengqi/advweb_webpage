@@ -181,10 +181,10 @@
         <img src="static/images/pipe_train_00.jpg" alt="model train" width="800" height="600"/>
       </div>
       <p> 
-        (a) <strong>Automatic Attack and Feedback Collection Pipeline.</strong>
+        (a)<strong>Automatic Attack and Feedback Collection Pipeline.</strong>
         We employ LLMs as an attack prompter, generating a set of n various diverse adversarial prompts.We then evaluate whether the attack against the black-box web agent is successful using these adversarial prompts, constructing positive signals and negative signals for reinforcement learning.
         <br>
-        (b) <strong>AdvWeb Prompter Model Training.</strong> 
+        (b)<strong>AdvWeb Prompter Model Training.</strong> 
         Using the positive subsets, we perform the first stage SFT training. Leveraging both positive and negative feedback, we train the model in the second DPO stage.
       </p>
     </div>
@@ -198,7 +198,7 @@
         <img src="static/images/ASR.png" alt="model train" width="600" height="350"/>
       </div>
       <p>
-        A. <strong>Attack Success Rate.</strong> 
+        A. <strong>Attack Success Rate</strong> 
         Attack success rate (ASR) of different algorithms against the SeeAct agent powered by different proprietary VLM backends across various website domains. The attack performance of our proposed AdvWeb algorithm is significantly higher than that of the other four strong baselines.
         <br>
       </p>
@@ -206,7 +206,7 @@
         <img src="static/images/asr2.png" alt="model train" width="600" height="350"/>
       </div>
       <p> 
-        B. <strong> Attack success rate (ASR) in the controllability test.</strong> 
+        B. <strong> Attack success rate (ASR) in the controllability test</strong> 
         For successful attacks, the original attack targets are modified to alternative targets. We adjusted our method, AdvWeb, as well as the other four baselines to the controllable setting. The results show that AdvWeb’s performance is significantly better than the other baselines.
         <br>
       </p>
@@ -214,7 +214,7 @@
         <img src="static/images/asr3.png" alt="model train" width="650" height="350"/>
       </div>
       <p> 
-        C. <strong> Attack success rate (ASR) under different variations.</strong> 
+        C. <strong> Attack success rate (ASR) under different variations</strong> 
         We take the successful attacks from the standard setting and evaluate their transferability across two conditions: changing the injection positions and modifying the HTML fields.
         <br>
       </p>
@@ -222,7 +222,7 @@
         <img src="static/images/asr4.png" alt="model train" width="650" height="350"/>
       </div>
       <p> 
-        D. <strong>Attack success rate (ASR) comparison between transfer-based black-box attacks and AdvWeb with Gemini 1.5 backend.</strong> 
+        D. <strong>Attack success rate (ASR) comparison between transfer-based black-box attacks and AdvWeb with Gemini 1.5 backend</strong> 
         Transfer-based attacks struggle with low ASR, as successful attacks on one model do not transfer well to other models. In contrast, AdvWeb, utilizing the RLAIFbased training paradigm with model feedback, achieves high ASR against black-box Gemini 1.5 models.
         <br>
       </p>
@@ -230,7 +230,7 @@
         <img src="static/images/asr5.png" alt="model train" width="600" height="450"/>
       </div>
       <p> 
-        E. <strong>Comparison of AdvWeb attack success rate (ASR) with different training stages.</strong> 
+        E. <strong>Comparison of AdvWeb attack success rate (ASR) with different training stages</strong> 
         We show the ASR of AdvWeb when trained using only the SFT stage versus the full adversarial prompter model trained with both the SFT and DPO stages. The results demonstrate that incorporating the DPO stage, which leverages both positive and negative feedback, leads to a significant improvement in ASR compared to using SFT alone.
         <br>
       </p>
@@ -238,7 +238,7 @@
         <img src="static/images/pattern_difference_00.jpg" alt="model train" width="800" height="600"/>
       </div>
       <p> 
-        F. <strong>Subtle differences in adversarial prompts lead to different attack results.</strong> 
+        F. <strong>Subtle differences in adversarial prompts lead to different attack results</strong> 
         We show two pairs of adversarial prompts with minimal differences that result in different attack results. In the first pair, changing “you” to “I” makes the attack successful. In the second pair, adding the word “previous” successfully misleads the target agent.
       </p>
     </div>
