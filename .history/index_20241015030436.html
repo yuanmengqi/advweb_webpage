@@ -177,43 +177,49 @@
 
 
 <!-- Image carousel -->
-<!--<section class="hero is-small">
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title" style="text-align: center;">Visualization Comparison</h2>
 
       <div id="results-carousel" class="carousel results-carousel" style="text-align: center;">
         <div class="item">
+          <!-- Your image here -->
           <img src="static/images/crossdomain.png" alt="semantic results"/>
           <h2 class="subtitle has-text-centered">
             Visualization on cross domain senarios. It is performed panoptic segmentation by FoodSAM.
           </h2>
         </div>
        <div class="item">
+        <!-- Your image here -->
         <img src="static/images/semantic.jpg" alt="semantic results"/>
         <h2 class="subtitle has-text-centered">
           Visualization comparison with baseline and ground-truth on semantic segmentation. The difference is calculated between the enhanced and coarse.
         </h2>
       </div>
       <div class="item">
+        <!-- Your image here -->
         <img src="static/images/semantic_compare.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Visualization comparison with SSA and RAM on semantic segmentation. SSA and RAM may output the instance information and their results are obtained by the public repository, here we only discuss semantic results on food.
         </h2>
       </div>
       <div class="item">
+        <!-- Your image here -->
         <img src="static/images/instance_compare.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Visualization comparison with RAM on instance segmentation. RAM may output the non-food instance information, here we only discuss the semantic results on food.
        </h2>
      </div>
      <div class="item">
+      <!-- Your image here -->
       <img src="static/images/panoptic_compare.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
         Visualization comparison with RAM, SEEM and ours on panoptic segmentation. The visualization results are obtained from their public code repository.
       </h2>
     </div>
     <div class="item">
+      <!-- Your image here -->
       <img src="static/images/prompt_vis.jpg" alt="prompt visualization"/>
       <h2 class="subtitle has-text-centered">
         Visualization results on promptable segmentation. From left to right: input, double point prompts, double box prompts
@@ -222,7 +228,7 @@
   </div>
 </div>
 </div>
-</section> -->
+</section>
 <!-- End image carousel -->
 
 
@@ -236,7 +242,14 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@misc
+      <pre><code>@misc{lan2023foodsam,
+  title={FoodSAM: Any Food Segmentation}, 
+  author={Xing Lan and Jiayi Lyu and Hanyu Jiang and Kun Dong and Zehai Niu and Yi Zhang and Jian Xue},
+  year={2023},
+  eprint={2308.05938},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV}
+}
   </code></pre>
     </div>
 </section>
