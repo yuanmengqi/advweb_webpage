@@ -182,10 +182,11 @@
       </div>
       <p> 
         "(a)"<strong>Automatic Attack and Feedback Collection Pipeline.</strong>
-        " We employ LLMs as an attack prompter, generating a set of n various diverse adversarial prompts.We then evaluate whether the attack against the black-box web agent is successful using these adversarial prompts, constructing positive signals and negative signals for reinforcement learning."
-        <br>
-        "(b)"<strong>AdvWeb Prompter Model Training</strong> 
-        " Using the positive subsets, we perform the first stage SFT training. Leveraging both positive and negative feedback, we train the model in the second DPO stage."
+        " We employ LLMs as an attack prompter, generating a set of n various diverse adversarial prompts.We then evaluate whether the attack against the black-box web agent is successful using these adversarial prompts, constructing positive signals and negative signals for reinforcement learning"
+        <strong>AdvWeb Prompter Model Training</strong> We first collect the training dataset using LLM-based attack
+        prompter by Algorithm 2. Then we collect positive and negative feedback from the target black-box model.
+        Using the positive subsets, we perform the first stage SFT training. Leveraging both positive and negative
+        feedback, we train the model in the second DPO stage.
       </p>
     </div>
   </div>

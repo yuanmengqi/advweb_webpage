@@ -178,15 +178,14 @@
   <div class="container is-max-desktop content">
       <h2 class="title is-3">Method</h2>
       <div class="content has-text-centered">
-        <img src="static/images/pipe_train_00.jpg" alt="model train"/>
+        <img src="static/images/advweb_pipeline.jpg" alt="advweb pipeline"/>
       </div>
-      <p> 
-        "(a)"<strong>Automatic Attack and Feedback Collection Pipeline.</strong>
-        " We employ LLMs as an attack prompter, generating a set of n various diverse adversarial prompts.We then evaluate whether the attack against the black-box web agent is successful using these adversarial prompts, constructing positive signals and negative signals for reinforcement learning."
-        <br>
-        "(b)"<strong>AdvWeb Prompter Model Training</strong> 
-        " Using the positive subsets, we perform the first stage SFT training. Leveraging both positive and negative feedback, we train the model in the second DPO stage."
-      </p>
+      <p>
+        Vision Language Models (VLMs) have revolutionized the creation of generalist web agents, empowering them to autonomously complete diverse tasks on real-world websites, thereby boosting human efficiency and productivity. However, despite their remarkable capabilities, the safety and security of these agents against malicious attacks remain critically underexplored, raising significant concerns about their safe deployment.
+        To uncover and exploit such vulnerabilities in web agents, we provide AdvWeb, a novel black-box attack framework designed against web agents. AdvWeb trains an adversarial prompter model that generates and injects adversarial prompts into web pages, misleading web agents into executing targeted adversarial actions such as inappropriate stock purchases or incorrect bank transactions—actions that could lead to severe real-world consequences. 
+        With only black-box access to the web agent, we train and optimize the adversarial prompter model using Direct Policy Optimization (DPO), leveraging both successful and failed attack strings against the target agent. Unlike prior approaches, our adversarial string injection maintains stealth and control: (1) the appearance of the website remains unchanged before and after the attack, making it nearly impossible for users to detect tampering, and (2) attackers can modify specific substrings within the generated adversarial string to seamlessly change the attack objective (e.g., purchasing stocks from a different company), greatly enhancing attack flexibility and efficiency.
+        We conduct extensive evaluations, demonstrating that AdvWeb achieves high success rates in attacking state-of-the-art GPT-4V-based VLM agents across various web tasks in black-box settings. Our findings expose critical vulnerabilities in current LLM/VLM-based agents, emphasizing the urgent need for developing more reliable web agents and implementing effective defenses against such adversarial threats.</p>
+      </div>
     </div>
   </div>
 
